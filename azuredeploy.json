@@ -4,6 +4,18 @@
     "parameters": {},
     "functions": [],
     "variables": {},
-    "resources": [],
+    "resources": [
+        {
+            "Type": "Microsoft.Storage/storageAccounts",
+            "apiVersion": "2023-05-01",
+            "name": "storageaccount1",
+            "tags": {"displayName": "storageaccount1"},
+            "location": "resourceGroup().location",
+            "sku": {
+                "name": "Premium_LRS"
+            }
+
+        }
+    ],
     "outputs": {}
   }
